@@ -1,0 +1,24 @@
+The run_analysis.R script performs the following steps:
+
+1.Download and Extract the Dataset
+
+The UCI HAR Dataset is downloaded and extracted into a folder called UCI_HAR_Dataset.
+
+2.Read the training and the test sets and assign column names
+
+3.Read subject set and assign column
+
+4.Merges the training , test sets and subject set to create one data set.
+
+5.Extracts only the measurements on the mean and standard deviation for each measurement. 
+Keep only columns with name that contains "mean" or "std" in the merged dataset
+
+6.Uses descriptive activity names to name the activities in the data set
+Replace code with actual activity name in the code column
+
+7.Appropriately labels the data set with descriptive variable names. 
+Change column names to a readable format according to the features_info.txt file in The UCI HAR Dataset
+
+8. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+Group by subject and activity and summarize all for mean
+Use write.table function to output the table as a txt file
